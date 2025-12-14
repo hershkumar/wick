@@ -23,9 +23,9 @@ import threading
 
 
 ROW_CONFIG: Sequence[Tuple[str, str, str, str]] = (
-    ("inputs", "Input States", "I", r"\phi_{I_{%d}}"),
+    ("externals", "Output States", "E", r"\phi_{E_{%d}}"),
     ("interactions", "Interaction Terms", "V", r"\mathcal{O}_{%d}"),
-    ("externals", "External States", "E", r"\phi_{E_{%d}}"),
+    ("inputs", "Input States", "I", r"\phi_{I_{%d}}"),
 )
 
 GRUVBOX_RGB = (
@@ -277,8 +277,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--interactions",
         type=int,
-        default=6,
-        help="Number of interaction terms (default: 6)",
+        default=2,
+        help="Number of interaction terms (default: 2)",
     )
     parser.add_argument(
         "--externals",

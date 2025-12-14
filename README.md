@@ -58,4 +58,3 @@ compiles; press `v` again whenever you want the preview to refresh. Temporary
 files are created under a scratch directory and cleaned up automatically when you
 exit the application.
 
-
